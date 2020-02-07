@@ -1,7 +1,7 @@
 fun main(){
 
     println(ElTiempo.titulo)
-    println(ElTiempo.textoTemperatura)
-    println(ElTiempo.textoTiempo)
+    println("La temperatura es de: "+ElTiempo.textoTemperatura+" y esta "+ElTiempo.textoTiempo)
+
 }
 
