@@ -1,11 +1,11 @@
 import org.jsoup.Jsoup
 
 object ElTiempo {
-    val doc = Jsoup.connect("https://weather.com/es-ES/tiempo/hoy/l/SPXX0084:1:SP").userAgent("Google").get()
-    val titulo = doc.title()
-    val ElementoTemperatura = doc.getElementsByClass("today_nowcard-temp")
-    val textoTemperatura= ElementoTemperatura.text()
-    val ElementoTiempo = doc.getElementsByClass("today_nowcard-phrase")
-    val textoTiempo = ElementoTiempo.text()
+    var doc = Jsoup.connect("https://weather.com/es-ES/tiempo/hoy/l/SPXX0084:1:SP").userAgent("Google").get()
+    var titulo = doc.title()
+    var ElementoTemperatura = doc.getElementsByClass("today_nowcard-temp")
+    var textoTemperatura= ElementoTemperatura.text()
+    var ElementoTiempo = doc.getElementsByClass("today_nowcard-phrase")
+    var textoTiempo = ElementoTiempo.text()
 
 }
